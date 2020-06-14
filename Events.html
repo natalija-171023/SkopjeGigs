@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/eventCSS.css" rel="stylesheet" type="text/css">
+    <script src="js/eventsJavaScript.js" type="text/javascript" rel="stylesheet"></script>
+    <script type="text/javascript" src="./js/Search.js"></script>
+</head>
+<body>
+<!---------- Navbar ------------>
+<nav class="navbar navbar-expand navbar-dark fixed-top" style="background-color:#500000 ;">
+    <div class="container">
+        <a class="navbar-brand" href="HomePage.html"><img src="images/logo.png" style="height: 50px; width: 200px;"></a>
+        <ul class="navbar-nav ml-5">
+            <li class="nav-item"><a class="nav-link " href="HomePage.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link active" href="Events.html">EVENTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="Gallery.html">GALLERY</a></li>
+            <li class="nav-item"><a class="nav-link" href="About.html">ABOUT US</a></li>
+        </ul>
+    </div>
+</nav>
+
+  <!------- Main Container --------->
+<div class="soSlika">
+    <div class="container-fluid container1">
+        <div class="row mt-5">
+            <div class="col mt-3 align-items-center">
+                <div class="card text-white font-weight-light pb-3 mb-5 mt-5 ml-5 mr-5">
+                    <h1 class="card-header">Events</h1>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <div id="myBtnContainer">
+                                    <button class="btn active1" onclick="changeActive(this);filterSelection('all')"><i class="fa fa-bars fa-2x"></i><br>Show all</button>
+                                    <button class="btn" onclick="changeActive(this);filterSelection('concert')"><i class="fa fa-microphone fa-2x"></i><br>Concerts</button>
+                                    <button class="btn" onclick="changeActive(this);filterSelection('philharmonic')"><i class="fas fa-guitar fa-2x"></i><br>Philharmonic</button>
+                                    <button class="btn" onclick="changeActive(this);filterSelection('festival')"><i class="fa fa-music fa-2x"></i><br>Festivals</button>
+                                </div>
+                            </div>
+                            <div class="col-6 pt-4 text-right">
+                                <form >
+                                    <div class="input-group p-3" id="inputDiv">
+
+                                        <div class="text-center input-group-append">
+                                            <button class="btn btn-dark bg-dark" type="submit" onclick="addName()"><i class="fa fa-user"></i></button>
+                                            <button class="btn btn-dark bg-dark" type="submit" onclick="addDate()"><i class="fa fa-calendar"></i></button>
+                                        </div>
+
+                                        <input type="search" class="form-control" onkeyup="searchName()" onkeypress="return event.keyCode!=13" id="myInput" style="width: 50px;" placeholder="Search here">
+
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-dark bg-dark" type="button">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col">
+                                <div class="container">
+                                    <div class="row" id="nastani">
+                                    <!--------------------- EVENTS ----------------------->
+                                    <div class="filterDiv concert philharmonic">
+                                        <div class="card card1 text-white nastan">
+                                            <img src="images/andre.jpg" style="height: 165px;" class="card-img-top">
+                                            <h4 class="card-header">Andre Rieu</h4>
+                                            <div class="card-body">
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline data">27.11.2020</p>
+                                                </div><br>
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline">21:00h</p>
+                                                </div><br>
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline">SRC Boris Trajkovski, Skopje</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a class="btn btn-block btn-dark bg-dark btn-link text-white" href="AndreRieu.html">Show Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class=" filterDiv festival justify-content-center">
+                                        <div class="card card1 text-white nastan">
+                                            <img src="images/skopjeCalling.jpg" style="height: 165px;" class="card-img-top">
+                                            <h4 class="card-header">Skopje Calling</h4>
+                                            <div class="card-body">
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline data">12.09.2020</p>
+                                                </div><br>
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline">20:00h</p>
+                                                </div><br>
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline">Stadium ARM, Skopje</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a class="btn btn-block btn-dark bg-dark btn-link text-white" href="SkopjeCalling.html">Show Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" filterDiv philharmonic">
+                                        <div class="card card1 text-white nastan">
+                                            <img src="images/bond.jpg" style="height: 165px;" class="card-img-top">
+                                            <h4 class="card-header">Bond</h4>
+                                            <div class="card-body">
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline data">25.09.2020</p>
+                                                </div><br>
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline">20:00h</p>
+                                                </div><br>
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline">Macedonian Philharmonic, Skopje</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a class="btn btn-block btn-dark bg-dark btn-link text-white" href="Bond.html">Show Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filterDiv concert">
+                                        <div class="card card1 text-white nastan">
+                                            <img src="images/elektricniOrgazm.jpg" style="height: 165px;" class="card-img-top">
+                                            <h3 class="card-header">Elektricni Orgazm</h3>
+                                            <div class="card-body">
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline data">24.06.2020</p>
+                                                </div><br>
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline">20:00h</p>
+                                                </div><br>
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline">ARM Stadium, Skopje</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a class="btn btn-block btn-dark bg-dark btn-link text-white" href="ElektricniOrgazm.html">Show Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filterDiv concert">
+                                        <div class="card card1 text-white nastan">
+                                            <img src="images/taleOfUs.jpg" style="height: 165px;" class="card-img-top">
+                                            <h4 class="card-header">Tale Of Us</h4>
+                                            <div class="card-body">
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline data">22.07.2020</p>
+                                                </div><br>
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline">22:00h</p>
+                                                </div><br>
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline">SRC Boris Trajkovski, Skopje</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a class="btn btn-block btn-dark bg-dark btn-link text-white" href="TaleOfUs.html">Show Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filterDiv concert">
+                                        <div class="card card1 text-white nastan">
+                                            <img src="images/mayhem.jpg" style="height: 165px;" class="card-img-top">
+                                            <h4 class="card-header">Mayhem</h4>
+                                            <div class="card-body">
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline data">04.11.2020</p>
+                                                </div><br>
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline">20:00h</p>
+                                                </div><br>
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline">Youth Cultural center, Skopje</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a class="btn btn-block btn-dark bg-dark btn-link text-white" href="Mayhem.html">Show Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filterDiv concert">
+                                        <div class="card card1 text-white nastan">
+                                            <img src="images/placebo.jpg" style="height: 165px;" class="card-img-top">
+                                            <h4 class="card-header">Placebo</h4>
+                                            <div class="card-body">
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline data">15.08.2020</p>
+                                                </div><br>
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline">21:00h</p>
+                                                </div><br>
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline">Stadium ARM, Skopje</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a class="btn btn-block btn-dark bg-dark btn-link text-white" href="Placebo.html">Show Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filterDiv concert festival">
+                                        <div class="card card1 text-white nastan">
+                                            <img src="images/foreverYoung.jpg" style="height: 165px;" class="card-img-top">
+                                            <h4 class="card-header">Forever Young</h4>
+                                            <div class="card-body">
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline data">04.07.2020</p>
+                                                </div><br>
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline">20:00h</p>
+                                                </div><br>
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline">SRC Boris Trajkovski, Skopje</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a class="btn btn-block btn-dark bg-dark btn-link text-white" href="ForeverYoung.html">Show Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filterDiv concert">
+                                        <div class="card card1 text-white nastan">
+                                            <img src="images/vlatkoLozanovski.jpg" style="height: 165px;" class="card-img-top">
+                                            <h4 class="card-header">Vlatko Lozanovski</h4>
+                                            <div class="card-body">
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline data">10.09.2020</p>
+                                                </div><br>
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline">21:00h</p>
+                                                </div><br>
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline">SRC Boris Trajkovski, Skopje</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a class="btn btn-block btn-dark bg-dark btn-link text-white" href="VlatkoLozanovski.html">Show Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filterDiv concert">
+                                        <div class="card card1 text-white nastan">
+                                            <img src="images/tamaraTodevska.jpg" style="height: 165px;" class="card-img-top">
+                                            <h4 class="card-header">Tamara Todevska</h4>
+                                            <div class="card-body">
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline data">25.08.2020</p>
+                                                </div><br>
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline">20:00h</p>
+                                                </div><br>
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline">Stadium ARM, Skopje</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a class="btn btn-block btn-dark bg-dark btn-link text-white" href="TamaraTodevska.html">Show Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filterDiv concert">
+                                        <div class="card card1 text-white nastan">
+                                            <img src="images/boyceAvenue.jpg" style="height: 165px;" class="card-img-top">
+                                            <h4 class="card-header">Boyce Avenue</h4>
+                                            <div class="card-body">
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline data">28.11.2020</p>
+                                                </div><br>
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline">21:00h</p>
+                                                </div><br>
+                                                <div class="d-inline-block">
+                                                    <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                                                    <p class="d-inline">Stadium ARM, Skopje</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a class="btn btn-block btn-dark bg-dark btn-link text-white" href="BoyceAvenue.html">Show Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!----------- Footer -------------->
+<footer class="mb-0 mt-0 pt-5 pb-3" style="background-color:#500000">
+    <div class="container text-center text-white">
+        <div>
+            <a href="https://www.facebook.com/" target="_blank" class="btn-link"><i class="fab fa-facebook-f text-white fa-2x"></i></a>
+            <a href="https://twitter.com/explore" target="_blank" class="btn-link ml-3"><i class="fab fa-twitter text-white fa-2x"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" class="btn-link ml-3"><i class="fab fa-instagram text-white fa-2x"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" class="btn-link ml-3"><i class="fab fa-linkedin text-white fa-2x"></i></a>
+
+        </div>
+        <p class="font-weight-light mt-3">Copyright &copy; 2020 SkopjeGIGS</p>
+    </div>
+</footer>
+
+<script src="js/jquery-3.4.1.slim.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

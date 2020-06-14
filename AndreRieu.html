@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Andre Rieu</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/EventRating.js" type="text/javascript" rel="stylesheet"></script>
+</head>
+<body>
+<!---------- Navbar ------------>
+<nav class="navbar navbar-expand navbar-dark fixed-top" style="background-color:#500000 ;">
+    <div class="container">
+        <a class="navbar-brand" href="HomePage.html"><img src="images/logo.png" style="height: 50px; width: 200px;"></a>
+        <ul class="navbar-nav ml-5">
+            <li class="nav-item"><a class="nav-link " href="HomePage.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link active" href="Events.html">EVENTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="Gallery.html">GALLERY</a></li>
+            <li class="nav-item"><a class="nav-link" href="About.html">ABOUT US</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-------------- Main Container --------------->
+<div class="soSlika text-white">
+    <div class="container mt-5">
+        <div class="row mt-3">
+            <div class="col-8 mt-5">
+                <div class="card mb-4">
+                    <div class="row">
+                        <div class="col-7">
+                            <img src="images/andre.jpg" style="width: 100%; height: auto" class="mt-2 ml-2">
+                        </div>
+                        <div class="col-5">
+                            <h2 class="card-header ml-2">Andre Rieu</h2>
+                            <div class="d-inline-block mt-5">
+                                <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">27.11.2020</p>
+                            </div><br>
+                            <div class="d-inline-block mt-2">
+                                <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">21:00h</p>
+                            </div><br>
+                            <div class="d-inline-block mt-2">
+                                <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">SRC Boris Trajkovski, Skopje</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h6>Superstar André Rieu returns to Skopje in 2020.
+                            André Rieu, the Dutch “King of Waltz”, who has made classical music accessible to all, will bring his Johann Strauss Orchestra back to Skopje as part of his world tour in November 2020.
+                            This exclusive event will take place in S.C. Boris Trajkovski in Skopje, Macedonia on the 27 November 2020.</h6>
+                        <h6>André Rieu says: <i>„My orchestra and I are so excited to return to Skopje this year during our world tour 2020. Our last visit in 2019 was truly unforgettable and very emotional.
+                            The Macedonian audience is so enthusiastic, passionate and warm-hearted. It will be wonderful to come back to your country in November to celebrate love,
+                            life and of course: music.</i></h6>
+                        <p>
+                        </p>
+                        <h5>Tickets on sale from 11 March 2020 at 10:00am online and from 13 March 2020 through all ticket sales points.</h5>
+                        <h5 class="">Want to buy tickets online? Visit one of these sites:</h5>
+                        <ul class="text-white mt-2">
+                            <li><a href="https://www.karti.com.mk/andre-rieu-27-11-2020en.nspx" target="_blank" class="text-white">https://www.karti.com.mk</a></li>
+                            <li><a href="https://mktickets.mk/en/concerts-en/andrerieu2020/" target="_blank" class="text-white">https://mktickets.mk</a></li>
+                            <li><a href="https://avalon.mk/" target="_blank" class="text-white">https://avalon.mk</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span><i class="fa fa-heart text-danger"></i> Like this event? </span>
+                        <span class="badge badge-pill badge-info" ><i class="fab fa-twitter"></i><a href="https://twitter.com/explore" target="_blank" class="text-white"> Tweet</a></span>
+                        <span class="badge badge-pill" style="background-color: #005cbf"><i class="fab fa-facebook-f"></i><a href="https://www.facebook.com/" target="_blank" class="text-white"> Share</a></span>
+
+                        <h5 class="mt-2">Rate the event: <span class="text-warning"><span onclick="rate(1)" id="1">&star;</span><span onclick="rate(2)" id="2">&star;</span><span onclick="rate(3)" id="3">&star;</span><span onclick="rate(4)" id="4">&star;</span><span onclick="rate(5)" id="5">&star;</span> </span></h5>
+
+                        <h5>Leave a comment about the event:</h5>
+                        <form class="mb-3">
+                            <textarea class="form-control" rows="3"></textarea>
+                            <button class="btn btn-dark bg-dark mt-2 float-right" type="submit">Submit</button>
+                        </form>
+                        <hr class="mt-5">
+                        <div class="media">
+                            <img src="images/user.png" style="width: 50px; height: 50px;" class="rounded-circle mr-2">
+                            <div class="media-body">
+                                <h4>John Smith <span class="text-warning" style="font-size: small">&starf;&starf;&starf;&starf;&starf;</span></h4>
+                                <p>I've been on his last concert in Skopje, and I really recommend you going if you have the opportunity.</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="media">
+                            <img src="images/user.png" style="width: 50px; height: 50px;" class="rounded-circle mr-2">
+                            <div class="media-body">
+                                <h4>Nick Johans <span class="text-warning" style="font-size: small">&starf;&starf;&starf;&starf;&starf;</span></h4>
+                                <p>Awesome!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn btn-dark bg-dark float-left mb-4" href="Events.html">&laquo; Back to all events</a>
+            </div>
+            <div class="col-4 mt-5 pr-0">
+                <h2 class="ml-5 text-center mt-2">Similar Events</h2>
+                <div class="card card1 text-white w-75 float-right">
+                    <img src="images/bond.jpg" style="height: 165px;" class="card-img-top">
+                    <h4 class="card-header">Bond</h4>
+                    <div class="card-body">
+                        <div class="d-inline-block">
+                            <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                            <p class="d-inline">25.09.2020</p>
+                        </div><br>
+                        <div class="d-inline-block">
+                            <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                            <p class="d-inline">20:00h</p>
+                        </div><br>
+                        <div class="d-inline-block">
+                            <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                            <p class="d-inline">Macedonian Philharmonic, Skopje</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-block btn-dark bg-dark btn-link text-white" href="Bond.html">Show Details</a>
+                    </div>
+                </div>
+                <div class="card card1 w-75 mt-2 float-right mb-4 text-white">
+                    <img src="images/foreverYoung.jpg" style="height: 165px;" class="card-img-top">
+                    <h4 class="card-header">Forever Young</h4>
+                    <div class="card-body">
+                        <div class="d-inline-block">
+                            <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                            <p class="d-inline">04.07.2020</p>
+                        </div><br>
+                        <div class="d-inline-block">
+                            <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                            <p class="d-inline">20:00h</p>
+                        </div><br>
+                        <div class="d-inline-block">
+                            <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                            <p class="d-inline">SRC Boris Trajkovski, Skopje</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-block btn-dark bg-dark btn-link text-white" href="ForeverYoung.html">Show Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!----------- Footer -------------->
+<footer class="mb-0 mt-0 pt-5 pb-3" style="background-color:#500000">
+    <div class="container text-center text-white">
+        <div>
+            <a href="https://www.facebook.com/" target="_blank" class="btn-link"><i class="fab fa-facebook-f text-white fa-2x"></i></a>
+            <a href="https://twitter.com/explore" target="_blank" class="btn-link ml-3"><i class="fab fa-twitter text-white fa-2x"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" class="btn-link ml-3"><i class="fab fa-instagram text-white fa-2x"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" class="btn-link ml-3"><i class="fab fa-linkedin text-white fa-2x"></i></a>
+
+        </div>
+        <p class="font-weight-light mt-3">Copyright &copy; 2020 SkopjeGIGS</p>
+    </div>
+</footer>
+
+<script src="js/jquery-3.4.1.slim.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+#myBtnContainer button{
+    width: 120px;
+    height: 80px;
+}
+
+.card1{
+    width: 300px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+
+}
+.container1{
+    overflow: hidden;
+}
+.filterDiv {
+    float: left;
+    color: #ffffff;
+    line-height: 30px;
+    margin: 2px;
+    display: none; /* Hidden by default */
+}
+.show {
+    display: block;
+}
+.btn {
+    border: 1px solid #303030;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #303030;
+    color: white;
+}
+
+.btn.active1 {
+    background-color: #202020;
+    color: white;
+}

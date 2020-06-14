@@ -1,0 +1,29 @@
+nav >div> ul > li> a:hover {
+    border-bottom: 1px white solid;
+}
+
+nav div ul li a.active{
+    border-bottom: 1px white solid;
+}
+.card{
+    background: rgba(16, 16, 16, 0.6);
+}
+.card1{
+    transition: background-color 700ms;
+}
+.card1:hover{
+    background-color: #202020;
+}
+.soSlika{
+    background-image: url("images/probi9.jpg");
+    background-size: cover;
+}
+.zum{
+    transition: transform .2s;
+}
+.zum:hover{
+    transform: scale(1.5);
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+}

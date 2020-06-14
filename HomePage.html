@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+           <!---------- Navbar ------------>
+<nav class="navbar navbar-expand navbar-dark fixed-top" style="background-color:#500000 ;">
+    <div class="container">
+        <a class="navbar-brand" href="HomePage.html"><img src="images/logo.png" style="height: 50px; width: 200px;"></a>
+        <ul class="navbar-nav ml-5">
+            <li class="nav-item"><a class="nav-link active" href="HomePage.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="Events.html">EVENTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="Gallery.html">GALLERY</a></li>
+            <li class="nav-item"><a class="nav-link" href="About.html">ABOUT US</a></li>
+        </ul>
+    </div>
+</nav>
+           <!----------- Carousel ------------>
+<div id="myCarousel" class="carousel slide mt-5" data-ride="carousel">
+
+   <ol class="carousel-indicators">
+       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+       <li data-target="#myCarousel" data-slide-to="1"></li>
+       <li data-target="#myCarousel" data-slide-to="2"></li>
+   </ol>
+
+   <div class="carousel-inner">
+       <div class="carousel-item active">
+           <img src="images/photo1.png" class="d-block w-100" alt="Discover music events">
+       </div>
+       <div class="carousel-item ">
+           <a href="AndreRieu.html">
+               <img src="images/photo2.png" class="d-block w-100" alt="Andre Rieu">
+           </a>
+       </div>
+       <div class="carousel-item ">
+           <a href="SkopjeCalling.html">
+               <img src="images/photo3.png" class="d-block w-100" alt="Skopje Calling 2020">
+           </a>
+       </div>
+
+   </div>
+
+   <a class="left carousel-control-prev" href="#myCarousel" data-slide="prev">
+       <span class="carousel-control-prev-icon"></span>
+       <span class="sr-only">Previous</span>
+   </a>
+   <a class="right carousel-control-next" href="#myCarousel" data-slide="next">
+       <span class="carousel-control-next-icon"></span>
+       <span class="sr-only">Next</span>
+   </a>
+</div>
+
+           <!----------- Main Page ------------>
+<div class="soSlika">
+<div class="container">
+    <h1 class="text-white pt-5 pb-3 text-center">Popular Events</h1>
+    <hr class="bg-white w-75" style="opacity: 0.5; height: 1px;">
+    <div class="row">
+        <div class="col">
+            <div class="row mt-2 justify-content-center">
+                <!--------  Card Item  ---------->
+                <div class="col-3">
+                    <div class="card card1 text-white">
+                        <img src="images/andre.jpg" style="height: 165px;" class="card-img-top">
+                        <h4 class="card-header">Andre Rieu</h4>
+                        <div class="card-body">
+                            <div class="d-inline-block">
+                                <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">27.11.2020</p>
+                            </div><br>
+                            <div class="d-inline-block">
+                                <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">21:00h</p>
+                            </div><br>
+                            <div class="d-inline-block">
+                                <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">SRC Boris Trajkovski, Skopje</p><br><br>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-block btn-dark bg-dark btn-link text-white" href="AndreRieu.html">Show Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!--------  Card Item  ---------->
+                <div class="col-3">
+                    <div class="card card1 text-white">
+                        <img src="images/skopjeCalling.jpg" style="height: 165px;" class="card-img-top">
+                        <h4 class="card-header">Skopje Calling</h4>
+                        <div class="card-body">
+                            <div class="d-inline-block">
+                                <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">12.09.2020</p>
+                            </div><br>
+                            <div class="d-inline-block">
+                                <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">20:00h</p>
+                            </div><br>
+                            <div class="d-inline-block">
+                                <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">Stadium ARM, Skopje</p><br><br>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-block btn-dark bg-dark btn-link text-white" href="SkopjeCalling.html">Show Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!--------  Card Item  ---------->
+                <div class="col-3">
+                    <div class="card card1 text-white">
+                        <img src="images/bond.jpg" style="height: 165px;" class="card-img-top">
+                        <h4 class="card-header">Bond</h4>
+                        <div class="card-body">
+                            <div class="d-inline-block">
+                                <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">25.09.2020</p>
+                            </div><br>
+                            <div class="d-inline-block">
+                                <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">20:00h</p>
+                            </div><br>
+                            <div class="d-inline-block">
+                                <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">Macedonian Philharmonic, Skopje</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-block btn-dark bg-dark btn-link text-white" href="Bond.html">Show Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2 justify-content-center">
+                <!--------  Card Item  ---------->
+                <div class="col-3">
+                    <div class="card card1 text-white">
+                        <img src="images/elektricniOrgazm.jpg" style="height: 165px;" class="card-img-top">
+                        <h4 class="card-header">Elektricni Orgazm</h4>
+                        <div class="card-body">
+                            <div class="d-inline-block">
+                                <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">24.06.2020</p>
+                            </div><br>
+                            <div class="d-inline-block">
+                                <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">20:00h</p>
+                            </div><br>
+                            <div class="d-inline-block">
+                                <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">ARM Stadium, Skopje</p><br><br>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-block btn-dark bg-dark btn-link text-white" href="ElektricniOrgazm.html">Show Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!--------  Card Item  ---------->
+                <div class="col-3">
+                    <div class="card card1 text-white">
+                        <img src="images/taleOfUs.jpg" style="height: 165px;" class="card-img-top">
+                        <h4 class="card-header">Tale Of Us</h4>
+                        <div class="card-body">
+                            <div class="d-inline-block">
+                                <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">22.07.2020</p>
+                            </div><br>
+                            <div class="d-inline-block">
+                                <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">22:00h</p>
+                            </div><br>
+                            <div class="d-inline-block">
+                                <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">SRC Boris Trajkovski, Skopje</p><br><br>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-block btn-dark bg-dark btn-link text-white" href="TaleOfUs.html">Show Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!--------  Card Item  ---------->
+                <div class="col-3">
+                    <div class="card card1 text-white">
+                        <img src="images/mayhem.jpg" style="height: 165px;" class="card-img-top">
+                        <h4 class="card-header">Mayhem</h4>
+                        <div class="card-body">
+                            <div class="d-inline-block">
+                                <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">04.11.2020</p>
+                            </div><br>
+                            <div class="d-inline-block">
+                                <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">20:00h</p>
+                            </div><br>
+                            <div class="d-inline-block">
+                                <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">Youth Cultural center, Skopje</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-block btn-dark bg-dark btn-link text-white" href="Mayhem.html">Show Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 mb-4">
+                <div class="col-12 text-center">
+                    <a class="btn btn-link text-dark btn-outline-dark" href="Events.html">View all events</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+           <!----------- Footer -------------->
+<footer class="mb-0 mt-0 pt-5 pb-3" style="background-color:#500000">
+    <div class="container text-center text-white">
+        <div>
+            <a href="https://www.facebook.com/" target="_blank" class="btn-link"><i class="fab fa-facebook-f text-white fa-2x"></i></a>
+            <a href="https://twitter.com/explore" target="_blank" class="btn-link ml-3"><i class="fab fa-twitter text-white fa-2x"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" class="btn-link ml-3"><i class="fab fa-instagram text-white fa-2x"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" class="btn-link ml-3"><i class="fab fa-linkedin text-white fa-2x"></i></a>
+
+        </div>
+        <p class="font-weight-light mt-3">Copyright &copy; 2020 SkopjeGIGS</p>
+    </div>
+</footer>
+
+<script src="js/jquery-3.4.1.slim.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

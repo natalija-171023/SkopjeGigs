@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bond</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/EventRating.js" type="text/javascript" rel="stylesheet"></script>
+</head>
+<body>
+<!---------- Navbar ------------>
+<nav class="navbar navbar-expand navbar-dark fixed-top" style="background-color:#500000 ;">
+    <div class="container">
+        <a class="navbar-brand" href="HomePage.html"><img src="images/logo.png" style="height: 50px; width: 200px;"></a>
+        <ul class="navbar-nav ml-5">
+            <li class="nav-item"><a class="nav-link " href="HomePage.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link active" href="Events.html">EVENTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="Gallery.html">GALLERY</a></li>
+            <li class="nav-item"><a class="nav-link" href="About.html">ABOUT US</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-------------- Main Container --------------->
+<div class="soSlika text-white">
+    <div class="container mt-5">
+        <div class="row mt-3">
+            <div class="col-8 mt-5">
+                <div class="card mb-4">
+                    <div class="row">
+                        <div class="col-7">
+                            <img src="images/bond.jpg" style="width: 100%; height: auto" class="mt-2 ml-2">
+                        </div>
+                        <div class="col-5">
+                            <h2 class="card-header text-center mr-2">Bond</h2>
+                            <div class="d-inline-block mt-2">
+                                <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">25.09.2020</p>
+                            </div><br>
+                            <div class="d-inline-block mt-2">
+                                <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">20:00h</p>
+                            </div><br>
+                            <div class="d-inline-block mt-2">
+                                <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                                <p class="d-inline">Macedonian Philharmonic, Skopje</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5>
+                            It is a great pleasure to announce the first big world concert for 2020 - The most popular and best-selling women's string quartet of all time, BOND, is coming to Skopje for the first time with a gala concert on March 20 at the Macedonian Philharmonic.
+                        </h5>
+                        <p>
+                            The BOND quartet is a superbrand with a million-strong army of fans from all around the world. Their music is a great act of defiance with styles. They are considered the best-selling string quartet of all time. They draw inspiration from classical,
+                            Latin, folk, jazz, rock, electro, Indian and Middle Eastern styles.
+                            Since its debut, the quartet, also known as "Spice Girls of Classical Music", has sold an astonishing 5 million albums worldwide, with 56 platinum and 15 gold copies on its releases.
+                        </p>
+                        <b>
+                            Tickets are already on sale and you can get them exclusively at Avalon music & ticket store in GTC, Avalon sales network across the country and online at <a href="https://avalon.mk" class="text-white">avalon.mk</a>
+                        </b>
+                        <h5 class="mt-3">Want to buy tickets online? Visit these sites:</h5>
+                        <ul class="text-white mt-2">
+                            <li><a href="https://avalon.mk/event-details-en.nspx?eventid=1637" target="_blank" class="text-white">https://avalon.mk</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span><i class="fa fa-heart text-danger"></i> Like this event? </span>
+                        <span class="badge badge-pill badge-info" ><i class="fab fa-twitter"></i><a href="https://twitter.com/explore" target="_blank" class="text-white"> Tweet</a></span>
+                        <span class="badge badge-pill" style="background-color: #005cbf"><i class="fab fa-facebook-f"></i><a href="https://www.facebook.com/" target="_blank" class="text-white"> Share</a></span>
+
+                        <h5 class="mt-2">Rate the event: <span class="text-warning"><span onclick="rate(1)" id="1">&star;</span><span onclick="rate(2)" id="2">&star;</span><span onclick="rate(3)" id="3">&star;</span><span onclick="rate(4)" id="4">&star;</span><span onclick="rate(5)" id="5">&star;</span> </span></h5>
+
+                        <h5>Leave a comment about the event:</h5>
+                        <form class="mb-3">
+                            <textarea class="form-control" rows="3"></textarea>
+                            <button class="btn btn-dark bg-dark mt-2 float-right" type="submit">Submit</button>
+                        </form>
+                        <hr class="mt-5">
+                        <div class="media">
+                            <img src="images/user2.png" style="width: 50px; height: 50px;" class="rounded-circle mr-2">
+                            <div class="media-body">
+                                <h4>Anna Peterson<span class="text-warning" style="font-size: small">&starf;&starf;&starf;&starf;&starf;</span></h4>
+                                <p>I'm so excited, this will be my second time going to their concert, the first time was amazing!</p>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <a class="btn btn-dark bg-dark float-left mb-4" href="Events.html">&laquo; Back to all events</a>
+            </div>
+            <div class="col-4 mt-5 pr-0">
+                <h2 class="ml-5 text-center mt-2">Similar Events</h2>
+
+                <div class="card card1 float-right w-75 text-white">
+                    <img src="images/andre.jpg" style="height: 165px;" class="card-img-top">
+                    <h4 class="card-header">Andre Rieu</h4>
+                    <div class="card-body">
+                        <div class="d-inline-block">
+                            <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                            <p class="d-inline">27.11.2020</p>
+                        </div><br>
+                        <div class="d-inline-block">
+                            <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                            <p class="d-inline">21:00h</p>
+                        </div><br>
+                        <div class="d-inline-block">
+                            <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                            <p class="d-inline">SRC Boris Trajkovski, Skopje</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-block btn-dark bg-dark btn-link text-white" href="AndreRieu.html">Show Details</a>
+                    </div>
+                </div>
+
+                <div class="card card1 float-right w-75 mt-2 text-white">
+                    <img src="images/foreverYoung.jpg" style="height: 165px;" class="card-img-top">
+                    <h4 class="card-header">Forever Young</h4>
+                    <div class="card-body">
+                        <div class="d-inline-block">
+                            <i class="fa fa-calendar font-weight-light d-inline" aria-hidden="true"></i>
+                            <p class="d-inline">04.07.2020</p>
+                        </div><br>
+                        <div class="d-inline-block">
+                            <i class="fa fa-clock font-weight-light d-inline" aria-hidden="true"></i>
+                            <p class="d-inline">20:00h</p>
+                        </div><br>
+                        <div class="d-inline-block">
+                            <i class="fa fa-map-marker-alt d-inline" aria-hidden="true"></i>
+                            <p class="d-inline">SRC Boris Trajkovski, Skopje</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-block btn-dark bg-dark btn-link text-white" href="ForeverYoung.html">Show Details</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!----------- Footer -------------->
+<footer class="mb-0 mt-0 pt-5 pb-3" style="background-color:#500000">
+    <div class="container text-center text-white">
+        <div>
+            <a href="https://www.facebook.com/" target="_blank" class="btn-link"><i class="fab fa-facebook-f text-white fa-2x"></i></a>
+            <a href="https://twitter.com/explore" target="_blank" class="btn-link ml-3"><i class="fab fa-twitter text-white fa-2x"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" class="btn-link ml-3"><i class="fab fa-instagram text-white fa-2x"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" class="btn-link ml-3"><i class="fab fa-linkedin text-white fa-2x"></i></a>
+
+        </div>
+        <p class="font-weight-light mt-3">Copyright &copy; 2020 SkopjeGIGS</p>
+    </div>
+</footer>
+
+<script src="js/jquery-3.4.1.slim.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
