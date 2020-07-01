@@ -68,15 +68,16 @@
                         <span class="badge badge-pill badge-info" ><i class="fab fa-twitter"></i><a href="https://twitter.com/explore" target="_blank" class="text-white"> Tweet</a></span>
                         <span class="badge badge-pill" style="background-color: #005cbf"><i class="fab fa-facebook-f"></i><a href="https://www.facebook.com/" target="_blank" class="text-white"> Share</a></span>
 
-                        <h5 class="mt-2">Rate the event: <span class="text-warning"><span onclick="rate(1)" id="1">&star;</span><span onclick="rate(2)" id="2">&star;</span><span onclick="rate(3)" id="3">&star;</span><span onclick="rate(4)" id="4">&star;</span><span onclick="rate(5)" id="5">&star;</span> </span></h5>
+                        <h5 class="mt-2" style="cursor: pointer;">Rate the event: <span class="text-warning"><span onclick="rate(1)" id="1">&star;</span><span onclick="rate(2)" id="2">&star;</span><span onclick="rate(3)" id="3">&star;</span><span onclick="rate(4)" id="4">&star;</span><span onclick="rate(5)" id="5">&star;</span> </span></h5>
 
                         <h5>Leave a comment about the event:</h5>
-                        <form class="mb-3">
-                            <textarea class="form-control" rows="3"></textarea>
-                            <button class="btn btn-dark bg-dark mt-2 float-right" type="submit">Submit</button>
+                        <form class="mb-3" onsubmit="return false">
+                            <input class="form-control mb-2" id="ime" placeholder="Enter your name">
+                            <textarea class="form-control" id="comment" placeholder="Enter comment" rows="3"></textarea>
+                            <button class="btn btn-dark bg-dark mt-2 float-right" onclick="addComment()" type="submit">Submit</button>
                         </form>
                         <hr class="mt-5">
-                        <div class="media">
+                        <div class="media kom">
                             <img src="images/user.png" style="width: 50px; height: 50px;" class="rounded-circle mr-2">
                             <div class="media-body">
                                 <h4>Tom Jensen<span class="text-warning" style="font-size: small">&starf;&starf;&starf;&starf;&starf;</span></h4>
