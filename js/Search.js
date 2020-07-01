@@ -26,8 +26,8 @@ function searchName() {
 function addName(){
     var inputDiv = document.getElementById("inputDiv");
     inputDiv.innerHTML = "<div class=\"text-center input-group-append\">\n" +
-        "                                            <button class=\"btn btn-dark bg-dark\" type=\"submit\" onclick=\"addName()\"><i class=\"fa fa-user\"></i></button>\n" +
-        "                                            <button class=\"btn btn-dark bg-dark\" type=\"submit\" onclick=\"addDate()\"><i class=\"fa fa-calendar\"></i></button>\n" +
+        "                                            <button class=\"btn btn-dark bg-dark\" title='Search by name' type=\"submit\" onclick=\"addName()\"><i class=\"fa fa-user\"></i></button>\n" +
+        "                                            <button class=\"btn btn-dark bg-dark\" title='Search by date' type=\"submit\" onclick=\"addDate()\"><i class=\"fa fa-calendar\"></i></button>\n" +
         "                                        </div>\n" +
         "\n" +
         "                                        <input type=\"search\" class=\"form-control\" onkeypress=\"return event.keyCode!=13\" onkeyup=\"searchName()\" id=\"myInput\" style=\"width: 50px;\" placeholder=\"Search here\">\n" +
@@ -41,8 +41,8 @@ function addName(){
 function addDate(){
     var inputDiv = document.getElementById("inputDiv");
     inputDiv.innerHTML = "<div class=\"text-center input-group-append\">\n" +
-        "                                            <button class=\"btn btn-dark bg-dark\" type=\"submit\" onclick=\"addName()\"><i class=\"fa fa-user\"></i></button>\n" +
-        "                                            <button class=\"btn btn-dark bg-dark\" type=\"submit\" onclick=\"addDate()\"><i class=\"fa fa-calendar\"></i></button>\n" +
+        "                                            <button class=\"btn btn-dark bg-dark\" title='Search by name' type=\"submit\" onclick=\"addName()\"><i class=\"fa fa-user\"></i></button>\n" +
+        "                                            <button class=\"btn btn-dark bg-dark\" title='Search by date' type=\"submit\" onclick=\"addDate()\"><i class=\"fa fa-calendar\"></i></button>\n" +
         "                                        </div>\n" +
         "\n" +
         "                                        <input type=\"date\" class=\"form-control\" onkeypress=\"return event.keyCode!=13\" onsubmit=\'searchDate()\' id=\"myDate\" style=\"width: 50px;\" placeholder=\"Search here\">\n" +
