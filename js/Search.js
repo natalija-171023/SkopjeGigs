@@ -2,7 +2,7 @@
 
 function searchName() {
 
-    var input, filter, nastani, list, i;
+    var input, filter, nastani, list, i, br=0;
     input = document.getElementById("myInput");
 
 
@@ -16,11 +16,38 @@ function searchName() {
             person = list[i].innerHTML;
             if (person.toUpperCase().indexOf(filter) > -1) {
                 list[i].closest(".nastan").style.display = "";
+                br++;
             } else {
                 list[i].closest(".nastan").style.display = "none";
             }
         }
+    if (br === 0){
 
+        var newLine = document.createElement("hr")
+        var newNode = document.createElement('div');
+        newNode.classList.add("noResult");
+        // newNode.innerHTML = "<div> " +
+        //     "<img src='./images/ghost.png' style=' height: 100px; position: absolute; left: 100px;'>" +
+        //     "</div>";
+
+            newNode.innerHTML = "<p>Sorry, we couln't come up with a result for your search.</p>" + "";
+
+
+
+
+
+// Get the reference node
+        var referenceNode = document.querySelector('.noResult');
+        var referenceNode1 = document.querySelector("#nastani");
+        if(referenceNode != null) {
+            return null;
+        } else{
+            referenceNode1.parentNode.insertBefore(newNode, referenceNode);
+        }
+
+
+
+    }
 
 }
 function addName(){
@@ -57,8 +84,7 @@ function searchDate(){
 
     var inputDate, filterDate, nastani, listDati, ddConverted, i, dd;
     inputDate = document.getElementById("myDate");
-
-
+    var br = 0;
     filterDate = inputDate.value;
     nastani = document.getElementById("nastani");
     listDati = nastani.getElementsByClassName("data");
@@ -66,11 +92,33 @@ function searchDate(){
     for (i = 0; i < listDati.length; i++) {
         dd = listDati[i].innerHTML;
         ddConverted = dd[6] + dd[7] + dd[8] +dd[9] + "-" + dd[3] + dd[4] + "-" + dd[0] + dd[1];
-        console.log(ddConverted);
+        // console.log(ddConverted);
         if (ddConverted.toUpperCase().indexOf(filterDate) > -1) {
             listDati[i].closest(".nastan").style.display = "";
+            br++;
         } else {
             listDati[i].closest(".nastan").style.display = "none";
         }
     }
+    if (br === 0){
+        var newLine = document.createElement("hr")
+        var newNode = document.createElement('div');
+        newNode.classList.add("noResult");
+        // newNode.innerHTML = "<div> " +
+        //     "<img src='./images/ghost.png' style=' height: 100px; position: absolute; left: 100px;'>" +
+        //     "</div>";
+        newNode.innerHTML = "<p>Sorry, we couln't come up with a result for your search.</p>"+"";
+
+
+
+// Get the reference node
+        var referenceNode = document.querySelector('.noResult');
+        var referenceNode1 = document.querySelector("#nastani");
+        if(referenceNode != null) {
+            return null;
+        } else{
+            referenceNode1.parentNode.insertBefore(newNode, referenceNode);
+        }
+    }
+
 }
