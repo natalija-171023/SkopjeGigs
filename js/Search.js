@@ -15,8 +15,13 @@ function searchName() {
         for (i = 0; i < list.length; i++) {
             person = list[i].innerHTML;
             if (person.toUpperCase().indexOf(filter) > -1) {
-                list[i].closest(".nastan").style.display = "";
-                br++;
+                var toDelete = document.querySelector("#noRes");
+                if(toDelete != null) {
+                    toDelete.remove();
+                }
+                    list[i].closest(".nastan").style.display = "";
+                    br++;
+
             } else {
                 list[i].closest(".nastan").style.display = "none";
             }
@@ -26,6 +31,7 @@ function searchName() {
         var newLine = document.createElement("hr")
         var newNode = document.createElement('div');
         newNode.classList.add("noResult");
+        newNode.setAttribute("id", "noRes");
         // newNode.innerHTML = "<div> " +
         //     "<img src='./images/ghost.png' style=' height: 100px; position: absolute; left: 100px;'>" +
         //     "</div>";
@@ -38,11 +44,12 @@ function searchName() {
 
 // Get the reference node
         var referenceNode = document.querySelector('.noResult');
+
         var referenceNode1 = document.querySelector("#nastani");
         if(referenceNode != null) {
-            return null;
+            return false;
         } else{
-            referenceNode1.parentNode.insertBefore(newNode, referenceNode);
+            referenceNode1.parentNode.insertBefore(newNode, referenceNode1);
         }
 
 
@@ -94,6 +101,10 @@ function searchDate(){
         ddConverted = dd[6] + dd[7] + dd[8] +dd[9] + "-" + dd[3] + dd[4] + "-" + dd[0] + dd[1];
         // console.log(ddConverted);
         if (ddConverted.toUpperCase().indexOf(filterDate) > -1) {
+            var toDelete = document.querySelector("#noRes");
+            if(toDelete != null) {
+                toDelete.remove();
+            }
             listDati[i].closest(".nastan").style.display = "";
             br++;
         } else {
@@ -101,9 +112,10 @@ function searchDate(){
         }
     }
     if (br === 0){
-        var newLine = document.createElement("hr")
+
         var newNode = document.createElement('div');
         newNode.classList.add("noResult");
+        newNode.setAttribute("id", "noRes");
         // newNode.innerHTML = "<div> " +
         //     "<img src='./images/ghost.png' style=' height: 100px; position: absolute; left: 100px;'>" +
         //     "</div>";
