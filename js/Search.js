@@ -116,9 +116,6 @@ function searchDate(){
         var newNode = document.createElement('div');
         newNode.classList.add("noResult");
         newNode.setAttribute("id", "noRes");
-        // newNode.innerHTML = "<div> " +
-        //     "<img src='./images/ghost.png' style=' height: 100px; position: absolute; left: 100px;'>" +
-        //     "</div>";
         newNode.innerHTML = "<p>Sorry, we couln't come up with a result for your search.</p>"+"";
 
 
