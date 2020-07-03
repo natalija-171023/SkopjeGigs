@@ -5,6 +5,10 @@ nav >div> ul > li> a:hover {
 nav div ul li a.active{
     border-bottom: 1px white solid;
 }
+html,body{
+    height: 100%;
+}
+
 .card{
     background: rgba(16, 16, 16, 0.6);
 }
@@ -14,8 +18,11 @@ nav div ul li a.active{
 .card1:hover{
     background-color: #202020;
 }
+body{
+    height: 100%;
+}
 .soSlika{
-    background-image: url("images/probi9.jpg");
+    background-image: url("../images/probi9.jpg");
     background-size: cover;
 }
 .zum{
@@ -26,4 +33,11 @@ nav div ul li a.active{
     position: relative;
     z-index: 1;
     opacity: 1;
+}
+.naslov{
+    height: 50px;
+    margin-bottom: 15px;
+}
+.cBody{
+    height: 120px;
 }
