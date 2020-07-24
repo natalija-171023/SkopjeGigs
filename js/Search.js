@@ -88,7 +88,7 @@ function addDate(){
         "                                        </div>"
 }
 function searchDate(){
-
+# Promena
     var inputDate, filterDate, nastani, listDati, ddConverted, i, dd;
     inputDate = document.getElementById("myDate");
     var br = 0;
